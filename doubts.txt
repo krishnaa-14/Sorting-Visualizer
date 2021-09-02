@@ -1,0 +1,43 @@
+Learn how to split a div into columns using bootstrap. 
+
+Add event Listener - https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event 
+
+-----------------------------------------------------------------------------------------------
+
+Synchronous code : 
+
+    middleFunction() {
+        console.log("Do some work");
+    }
+
+    console.log("Vamsi");
+
+    middleFunction();
+
+    console.log("Krishna");
+
+    // Output 
+
+    Vamsi
+    Do some work
+    Krishna
+
+Asynchronous Code : 
+
+    middleFunction() {
+        setTimeOut(() => {
+            console.log("Do some work");
+        }, 5000);
+    }
+
+    console.log("Vamsi");
+    middleFunction();
+    console.log("Krishna);
+
+    // Output 
+
+    Vamsi
+    Krishna
+    Do some work
+
+------------------------------------------------------------------------------------------------------
